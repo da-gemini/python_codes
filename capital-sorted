@@ -1,0 +1,4 @@
+def foo(*args):
+    ahn=[a.upper() for a in args]
+    ahn.sort()
+    return ahn
