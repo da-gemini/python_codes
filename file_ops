@@ -1,0 +1,6 @@
+with open("bear2.txt",'r')as append_file:
+    append_file_cont=append_file.read()
+
+
+with open("bear.txt",'a') as myfile:
+        content=myfile.write(append_file_cont)
