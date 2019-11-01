@@ -1,0 +1,8 @@
+with open("file.txt",'r') as c:
+    co=c.read()
+
+with open("file.txt",'a+')as ext_file:
+    conte=ext_file.write(co)
+    ext_file.seek(0)
+    
+print(conte)
