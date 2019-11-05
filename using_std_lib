@@ -1,0 +1,11 @@
+import time
+import os
+
+
+while True:
+    if os.path.exists("file.txt"):
+        with open("file.txt") as file:
+            print(file.read())
+    else:
+        print("file does not exist")
+    time.sleep(10)
