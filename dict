@@ -1,0 +1,15 @@
+import json
+import difflib
+
+data = json.load(open("files/data.json"))
+
+def search(w):
+    if w in data:
+        return data.get(word)
+    else:
+        return "enter correct word"
+
+word = input("enter word to search : ")
+word=word.lower()
+print(search(word))
+print(difflib.get_close_matches(word,data.keys())[0])
